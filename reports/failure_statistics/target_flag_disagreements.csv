@@ -1,0 +1,22 @@
+UDI,Type,Machine failure,TWF,HDF,PWF,OSF,RNF,any_failure_flag,review_reason
+1222,M,0,0,0,0,0,1,1,target_0_with_failure_flag
+1303,L,0,0,0,0,0,1,1,target_0_with_failure_flag
+1438,H,1,0,0,0,0,0,0,target_1_without_failure_flag
+1749,H,0,0,0,0,0,1,1,target_0_with_failure_flag
+2073,L,0,0,0,0,0,1,1,target_0_with_failure_flag
+2560,L,0,0,0,0,0,1,1,target_0_with_failure_flag
+2750,M,1,0,0,0,0,0,0,target_1_without_failure_flag
+3453,H,0,0,0,0,0,1,1,target_0_with_failure_flag
+4045,M,1,0,0,0,0,0,0,target_1_without_failure_flag
+4685,M,1,0,0,0,0,0,0,target_1_without_failure_flag
+5472,L,0,0,0,0,0,1,1,target_0_with_failure_flag
+5496,H,0,0,0,0,0,1,1,target_0_with_failure_flag
+5510,L,0,0,0,0,0,1,1,target_0_with_failure_flag
+5537,M,1,0,0,0,0,0,0,target_1_without_failure_flag
+5640,L,0,0,0,0,0,1,1,target_0_with_failure_flag
+5942,L,1,0,0,0,0,0,0,target_1_without_failure_flag
+6092,L,0,0,0,0,0,1,1,target_0_with_failure_flag
+6479,L,1,0,0,0,0,0,0,target_1_without_failure_flag
+6961,L,0,0,0,0,0,1,1,target_0_with_failure_flag
+7489,L,0,0,0,0,0,1,1,target_0_with_failure_flag
+7869,H,0,0,0,0,0,1,1,target_0_with_failure_flag

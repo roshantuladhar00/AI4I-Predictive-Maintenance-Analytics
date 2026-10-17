@@ -1,0 +1,6 @@
+flag,flagged_development_rows,flagged_with_target_failure,flagged_without_target_failure,percent_of_development_rows,percent_of_target_failures_with_flag
+TWF,36,36,0,0.44999999999999996,13.284132841328415
+HDF,86,86,0,1.075,31.73431734317343
+PWF,82,82,0,1.0250000000000001,30.25830258302583
+OSF,82,82,0,1.0250000000000001,30.25830258302583
+RNF,15,1,14,0.1875,0.36900369003690037
