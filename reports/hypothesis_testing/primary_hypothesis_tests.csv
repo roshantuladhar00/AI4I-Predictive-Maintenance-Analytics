@@ -1,0 +1,7 @@
+hypothesis,comparison,outcome,test,raw_p_value,adjusted_p_value,reject_H0,decision
+H1,Temperature difference × torque interaction,HDF,"Binomial GLM, HC0 robust two-sided Wald test",2.814294085851964e-06,8.442882257555891e-06,True,Reject H0
+H2,Air temperature [K],Machine failure groups,Welch ANOVA,8.538219688312328e-13,3.4152878753249314e-12,True,Reject H0
+H2,Process temperature [K],Machine failure groups,Welch ANOVA,9.743316101969001e-05,0.00019486632203938003,True,Reject H0
+H2,Rotational speed [rpm],Machine failure groups,Welch ANOVA,0.09348021578440027,0.09348021578440027,False,Fail to reject H0
+H2,Torque [Nm],Machine failure groups,Welch ANOVA,1.4206988070511126e-21,8.524192842306676e-21,True,Reject H0
+H2,Tool wear [min],Machine failure groups,Welch ANOVA,4.985775054276004e-13,2.492887527138002e-12,True,Reject H0
