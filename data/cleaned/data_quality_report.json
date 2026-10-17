@@ -1,0 +1,96 @@
+{
+  "input_relative_path": "data/ai4i2020.csv",
+  "input_sha256": "f602454c133d7b85f0b90f7ff4c8d2b9e450cd5583536ee4da93d7eda43f3292",
+  "cleaned_relative_path": "data/cleaned/ai4i2020_cleaned.csv",
+  "rows_before": 10000,
+  "rows_after": 10000,
+  "columns_after": 14,
+  "validation_issue_counts": {
+    "missing_values": 0,
+    "exact_duplicate_rows": 0,
+    "repeated_UDI_values": 0,
+    "repeated_Product_ID_values": 0,
+    "nonfinite_numeric_entries": 0,
+    "invalid_type_values": 0,
+    "invalid_Product_ID_values": 0,
+    "invalid_UDI_values": 0,
+    "invalid_binary_Machine failure": 0,
+    "invalid_binary_TWF": 0,
+    "invalid_binary_HDF": 0,
+    "invalid_binary_PWF": 0,
+    "invalid_binary_OSF": 0,
+    "invalid_binary_RNF": 0,
+    "Air temperature <= 0": 0,
+    "Process temperature <= 0": 0,
+    "Rotational speed <= 0": 0,
+    "Torque < 0": 0,
+    "Tool wear < 0": 0
+  },
+  "machine_failure_counts": {
+    "0": 9661,
+    "1": 339
+  },
+  "failure_rate": 0.0339,
+  "label_review": {
+    "total_disagreements": 27,
+    "failure_without_flag": 9,
+    "flag_without_failure": 18,
+    "rows_with_overlapping_flags": 24,
+    "policy": "Preserve the supplied Machine failure label and all failure flags."
+  },
+  "IQR_flags": [
+    {
+      "feature": "Air temperature [K]",
+      "lower_IQR_fence": 293.5,
+      "upper_IQR_fence": 306.29999999999995,
+      "flagged_rows": 0,
+      "flagged_rows_with_failure": 0
+    },
+    {
+      "feature": "Process temperature [K]",
+      "lower_IQR_fence": 305.35,
+      "upper_IQR_fence": 314.55000000000007,
+      "flagged_rows": 0,
+      "flagged_rows_with_failure": 0
+    },
+    {
+      "feature": "Rotational speed [rpm]",
+      "lower_IQR_fence": 1139.5,
+      "upper_IQR_fence": 1895.5,
+      "flagged_rows": 418,
+      "flagged_rows_with_failure": 35
+    },
+    {
+      "feature": "Torque [Nm]",
+      "lower_IQR_fence": 12.800000000000011,
+      "upper_IQR_fence": 67.19999999999999,
+      "flagged_rows": 69,
+      "flagged_rows_with_failure": 62
+    },
+    {
+      "feature": "Tool wear [min]",
+      "lower_IQR_fence": -110.5,
+      "upper_IQR_fence": 325.5,
+      "flagged_rows": 0,
+      "flagged_rows_with_failure": 0
+    }
+  ],
+  "cleaning_policy": {
+    "rows_removed": 0,
+    "imputation_applied": false,
+    "sensor_values_clipped": false,
+    "labels_rewritten": false,
+    "resampling_applied": false,
+    "scaling_applied": false,
+    "engineered_features_added": false
+  },
+  "exclude_from_future_model_inputs": [
+    "UDI",
+    "Product ID",
+    "TWF",
+    "HDF",
+    "PWF",
+    "OSF",
+    "RNF"
+  ]
+}
