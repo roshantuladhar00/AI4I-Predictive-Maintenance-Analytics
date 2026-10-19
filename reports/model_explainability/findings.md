@@ -1,0 +1,12 @@
+- I reproduced the selected **weighted_voting** model's validation scores (AP **0.8419**).
+- **Torque [Nm]** has the largest individual mean permutation AP drop (**0.6390**, shuffle SD **0.0267**).
+- **Torque [Nm]** has the largest mean absolute SHAP contribution in the **128** randomly sampled validation rows (**0.0334** score units).
+- The global SHAP sample contains **8** failure observations; I treat its ranking as descriptive.
+- The largest SHAP score-reconstruction error is **1.33e-15**.
+- For the selected **TP** example (UDI **4463**), **Torque [Nm]** has the largest absolute contribution (**+0.5790**); the model score is **0.9767**.
+- For the selected **FP** example (UDI **4192**), **Air temperature [K]** has the largest absolute contribution (**+0.2868**); the model score is **0.7063**.
+- For the selected **FN** example (UDI **5618**), **Torque [Nm]** has the largest absolute contribution (**+0.4484**); the model score is **0.2713**.
+- For the selected **TN** example (UDI **441**), **Torque [Nm]** has the largest absolute contribution (**-0.0184**); the model score is **0.0008**.
+- I used training rows for the SHAP background and validation rows for explanations. The final test set remains unscored, although it was included in early exploratory analysis.
+- These validation observations have already supported model, calibration, and demonstration-threshold choices. The explanations are exploratory and do not add an independent performance evaluation.
+- The demonstration threshold remains provisional because operating costs and a required recall target have not been specified.

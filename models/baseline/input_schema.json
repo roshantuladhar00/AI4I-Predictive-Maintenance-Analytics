@@ -1,0 +1,31 @@
+{
+  "raw_input_columns": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Type"
+  ],
+  "feature_set": "engineered",
+  "model_input_columns": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Type",
+    "Temp_diff",
+    "Torque_RPM_ratio"
+  ],
+  "valid_Type_values": [
+    "L",
+    "M",
+    "H"
+  ],
+  "feature_preparation_required_before_pipeline": true,
+  "engineered_formulas": {
+    "Temp_diff": "Process temperature [K] - Air temperature [K]",
+    "Torque_RPM_ratio": "Torque [Nm] / (Rotational speed [rpm] + 1)"
+  }
+}

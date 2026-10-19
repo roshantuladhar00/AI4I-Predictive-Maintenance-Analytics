@@ -1,0 +1,5 @@
+case,UDI,selection_rule,actual_failure,predicted_failure,failure_score,demonstration_threshold
+TP,4463,Highest-scoring correctly flagged failure,1,1,0.9766790999122416,0.3469522918955591
+FP,4192,Highest-scoring false alarm,0,1,0.7063421250047129,0.3469522918955591
+FN,5618,Highest-scoring missed failure,1,0,0.2713003650739593,0.3469522918955591
+TN,441,Lowest-scoring correctly unflagged observation,0,0,0.0007658689539379855,0.3469522918955591

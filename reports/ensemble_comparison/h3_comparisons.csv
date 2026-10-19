@@ -1,0 +1,5 @@
+ensemble,comparator,validation_AP_difference,Bonferroni_bootstrap_CI_low,Bonferroni_bootstrap_CI_high,interval_above_zero
+weighted_voting,random_forest,0.0190724325510766,-0.0162013446102634,0.06508697345365393,False
+weighted_voting,gradient_boosting,0.02138413677775408,-0.0242887495228635,0.07393526645212517,False
+weighted_voting,logistic_balanced,0.3626288592835294,0.22614851010127002,0.49045483644045057,True
+weighted_voting,mlp,0.08848672901622767,0.01691919635546665,0.17749294512090147,True

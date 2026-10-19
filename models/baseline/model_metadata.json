@@ -1,0 +1,35 @@
+{
+  "candidate": "random_forest__engineered",
+  "feature_set": "engineered",
+  "selected_by": "Highest mean average precision in training-only shared 3-fold stratified CV",
+  "training_rows": 6400,
+  "validation_rows": 1600,
+  "reserved_final_test_rows": 2000,
+  "final_test_scored": false,
+  "early_EDA_included_final_test_rows": true,
+  "model_refitted_on_validation": false,
+  "provisional": true,
+  "calibration_established": false,
+  "demonstration_threshold": 0.34370899470899485,
+  "threshold_selection": "Maximum validation F1; not a specified maintenance-cost optimum",
+  "reference_threshold": 0.5,
+  "validation_AP": 0.822802965525342,
+  "training_CV_AP_mean": 0.8333555681939239,
+  "training_CV_AP_std": 0.03287690823068755,
+  "input_checksums": {
+    "ai4i2020_cleaned.csv": "e9b3dc735de4c06dbb8bb9f1b05d4c24a9293d06ad8177cf1ecca30b1f25fd2b",
+    "split_manifest.csv": "9b5bfab7837a8d18473be816bad87a28d5eff4166ec93adc1c60b8f992f20b4b",
+    "experiment_settings.json": "f3484fa19e1cfc6956500e43058ed7021890a0ec97a844a7e6b50534490ca14b"
+  },
+  "seed": 42,
+  "cv_splits": 3,
+  "class_balancing": "Candidate-specific class weighting; no resampling",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "scipy": "1.15.3",
+    "joblib": "1.4.2"
+  }
+}

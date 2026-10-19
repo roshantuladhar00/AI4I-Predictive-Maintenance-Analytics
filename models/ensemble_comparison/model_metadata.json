@@ -1,0 +1,51 @@
+{
+  "candidate": "weighted_voting",
+  "selected_by": "Highest mean AP on saved training CV folds",
+  "score_representation": "uncalibrated",
+  "representation_selection": "Lower validation Brier score between uncalibrated and training-only sigmoid",
+  "feature_set": "engineered",
+  "training_rows": 6400,
+  "validation_rows": 1600,
+  "reserved_final_test_rows": 2000,
+  "final_test_scored": false,
+  "early_EDA_included_final_test_rows": true,
+  "refitted_on_validation": false,
+  "provisional": true,
+  "operating_policy_finalized": false,
+  "demonstration_threshold": 0.3469522918955591,
+  "threshold_selection": "Maximum validation F1; operating costs are not specified",
+  "training_CV_AP_mean_uncalibrated": 0.844915008046785,
+  "training_CV_AP_std_uncalibrated": 0.02230422930324869,
+  "validation_AP_selected_representation": 0.8418753980764184,
+  "validation_Brier_selected_representation": 0.011488025307084976,
+  "calibration_external_validation_complete": false,
+  "fit_warning_count": 0,
+  "convergence_warning_count": 0,
+  "input_checksums": {
+    "data": "e9b3dc735de4c06dbb8bb9f1b05d4c24a9293d06ad8177cf1ecca30b1f25fd2b",
+    "split": "9b5bfab7837a8d18473be816bad87a28d5eff4166ec93adc1c60b8f992f20b4b",
+    "smote_settings": "f3484fa19e1cfc6956500e43058ed7021890a0ec97a844a7e6b50534490ca14b",
+    "baseline_settings": "aa202fcd89d57cb14bcb1b22ca935480335916de68380d41bdad27b46a0b2017",
+    "baseline_cv_results": "93844b5cc450fa564f44a8a07b70ccb9a17e37a1724a16fa7af52e1d0e82eba2",
+    "baseline_cv_folds": "0b1bc75536e8911b863fd4c5c1c81bab68e11cef09e9b9cfc82de2bbc822dbb0",
+    "baseline_fold_manifest": "d3f83ddcc64f7ae078875aa4d951f389e8dfed69fe0b258fbe5698bff6042494",
+    "baseline_validation": "f6cfe7d7cb99b3fad788ee02bfa147bb21c5bce8615a66fd1efad1b8beac9dd3",
+    "baseline_metadata": "fc05ef0330d08bb5b14e4769526177c747251958c87499d42f039457e4c4cd8e",
+    "baseline_schema": "d86793e105f3a059b58f4dc782a12d2e15a94864003a957b366b671ae0e586a2",
+    "baseline_model": "0a17c223b59a42a19530abc95e470918a3d0620ed26f0b353d774d6a1c544448"
+  },
+  "seed": 42,
+  "voting_weights_RF_GB_MLP": [
+    2,
+    2,
+    1
+  ],
+  "H3_exploratory_status": "Ensemble superiority is not established across all four specified comparators",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "scikit_learn": "1.6.1",
+    "joblib": "1.4.2"
+  }
+}

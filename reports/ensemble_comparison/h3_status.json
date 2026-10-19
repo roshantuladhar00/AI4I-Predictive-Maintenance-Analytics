@@ -1,0 +1,21 @@
+{
+  "ensemble_selected_by_training_CV": "weighted_voting",
+  "comparators": [
+    "random_forest",
+    "gradient_boosting",
+    "logistic_balanced",
+    "mlp"
+  ],
+  "status": "Ensemble superiority is not established across all four specified comparators",
+  "exploratory": true,
+  "independent_confirmation_complete": false,
+  "bootstrap_repeats": 3000,
+  "sampling": "Paired stratified bootstrap of validation rows; fixed class counts",
+  "tail_probability": 0.00625,
+  "interval_adjustment": "Bonferroni across four comparator intervals",
+  "limitations": [
+    "Conditional on fixed fitted models and observed class counts",
+    "No retraining or model-selection uncertainty included",
+    "Repeatedly explored validation set; not independent confirmation"
+  ]
+}
