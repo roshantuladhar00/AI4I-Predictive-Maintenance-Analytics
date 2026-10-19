@@ -9,7 +9,7 @@ random_forest__raw,random_forest,raw,1,0.7068723581323513,0.9621410008441174
 random_forest__raw,random_forest,raw,2,0.7174872351224332,0.970561081459917
 random_forest__raw,random_forest,raw,3,0.7825243706658748,0.9680912717666721
 random_forest__engineered,random_forest,engineered,1,0.8205074089651965,0.9672987577515901
-random_forest__engineered,random_forest,engineered,2,0.8088428622911398,0.9783276726508168
+random_forest__engineered,random_forest,engineered,2,0.8088428622911397,0.9783276726508168
 random_forest__engineered,random_forest,engineered,3,0.8707164333254352,0.9719189713731198
 random_forest_balanced__raw,random_forest_balanced,raw,1,0.7097914418154958,0.9642380012362664
 random_forest_balanced__raw,random_forest_balanced,raw,2,0.6521928218289085,0.9755849371933797

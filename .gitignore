@@ -1,7 +1,29 @@
-.venv/
+# Ignore demo / export folder
+Capstone_Project_Demo-699/
+
+# Python cache
 __pycache__/
-*.py[cod]
-.pytest_cache/
-.streamlit/secrets.toml
-.env
-predictions.csv
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+
+# Model binaries (large, regenerable)
+# Run: python -m src.train       → best_model.pkl
+# Run: python -m src.train       → rul_regressor.joblib
+models/*.pkl
+models/*.joblib
+
+# Model metadata (small JSON) — DO track these:
+#   eval.json         → evaluation metrics
+#   threshold.json    → tuned decision threshold (required by dashboard)
+
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

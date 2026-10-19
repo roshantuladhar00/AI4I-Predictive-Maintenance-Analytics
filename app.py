@@ -10,6 +10,7 @@ from src.predict import (
     ArtifactError, InputValidationError, MAX_BATCH_ROWS, MAX_CSV_BYTES,
     RAW_COLUMNS, asset_signature, load_bundle, parse_csv,
 )
+from src.presentation import GaugeResult, make_alert_gauge
 
 PROJECT_ROOT = Path(__file__).resolve().parent
 st.set_page_config(page_title="AI4I Maintenance Analytics", page_icon="⚙️", layout="wide")
@@ -52,25 +53,57 @@ with st.sidebar:
     st.markdown("### AI4I / Maintenance")
     st.caption("Predictive maintenance analytics")
     st.divider()
-    st.markdown("**Saved decision policy**")
-    st.metric("Alert threshold", f"{bundle.threshold:.6f}")
-    st.caption("The full saved threshold is used for every prediction.")
-    st.markdown("**Selection objective**")
-    st.write(
-        f"Maximize validation failure recall with a "
-        f"{bundle.policy['validation_FPR_cap']:.0%} false-positive-rate cap."
-    )
+    st.markdown("**How to read the gauge**")
+    st.metric("Alert line", f"{bundle.threshold * 100:.2f} / 100")
+    st.caption("A score at or above the line raises a failure alert.")
+    with st.expander("Decision policy"):
+        st.write(
+            f"I maximize validation failure recall with a "
+            f"{bundle.policy['validation_FPR_cap']:.0%} false-positive-rate cap."
+        )
+        st.caption(f"Original score threshold: {bundle.threshold:.15f}.")
+        st.caption("The full saved threshold is used for every prediction.")
     st.divider()
     st.caption("Weighted voting · Uncalibrated model score")
     st.caption("Project prototype using the synthetic AI4I dataset.")
 
 st.caption("AI4I 2020 · FROZEN MODEL")
-st.title("Maintenance prediction workspace")
-st.write("Check one observation or score a CSV using the evaluated model and saved alert policy.")
+st.title("Maintenance prediction dashboard")
+st.write("Enter machine measurements and explain the prediction using the failure alert gauge.")
 
 single_tab, batch_tab, results_tab = st.tabs(["Single observation", "CSV predictions", "Model & results"])
 
 with single_tab:
+    sample_path = PROJECT_ROOT / "sample_input.csv"
+    if sample_path.is_file():
+        examples = pd.read_csv(sample_path)
+
+        def show_example(example_position):
+            example = examples.iloc[example_position]
+            input_keys = {
+                "air_temperature": "Air temperature [K]",
+                "process_temperature": "Process temperature [K]",
+                "rotational_speed": "Rotational speed [rpm]",
+                "torque": "Torque [Nm]",
+                "tool_wear": "Tool wear [min]",
+            }
+            for key, column in input_keys.items():
+                st.session_state[key] = float(example[column])
+            st.session_state["product_type"] = str(example["Type"])
+            st.session_state["single_prediction"] = bundle.predict_frame(
+                examples.iloc[[example_position]][RAW_COLUMNS].copy()
+            )
+
+        demo_a, demo_b, _ = st.columns([1, 1, 2])
+        demo_a.button(
+            "Show no-alert example", on_click=show_example, args=(0,),
+            use_container_width=True, key="example_no_alert",
+        )
+        demo_b.button(
+            "Show alert example", on_click=show_example, args=(1,),
+            use_container_width=True, key="example_alert",
+        )
+        st.caption("Presentation examples use saved validation observations. Each example is scored by the model.")
     st.subheader("Enter machine measurements")
     st.caption("Use kelvin, rpm, newton-metres, and minutes as shown. The initial values are an example observation.")
     with st.form("single_observation"):
@@ -103,22 +136,44 @@ with single_tab:
     single_result = st.session_state.get("single_prediction")
     if single_result is not None:
         row = single_result.iloc[0]
-        st.subheader("Latest submitted observation")
-        if bool(row["failure_alert"]):
-            st.warning("Failure alert — this observation crosses the selected alert threshold.")
-        else:
-            st.success("No alert at the selected threshold.")
-        score_column, threshold_column = st.columns(2)
-        score_column.metric("Model score · uncalibrated", f"{row['failure_score']:.6f}")
-        threshold_column.metric("Decision threshold", f"{bundle.threshold:.6f}")
-        st.caption("An alert is raised when the model score is greater than or equal to the saved threshold.")
+        presentation = GaugeResult(float(row["failure_score"]), bundle.threshold)
+        st.subheader("Prediction result")
+        gauge_column, explanation_column = st.columns([1.35, 1], gap="large")
+        with gauge_column:
+            st.plotly_chart(
+                make_alert_gauge(presentation.score, presentation.threshold),
+                use_container_width=True, theme=None, key="single_alert_gauge",
+                config={"displayModeBar": False, "staticPlot": True},
+            )
+            st.caption("The gauge shows the original model score multiplied by 100. Scores are uncalibrated.")
+        with explanation_column:
+            st.markdown("#### Model decision")
+            if presentation.is_alert:
+                st.warning(presentation.status)
+            else:
+                st.success(presentation.status)
+            st.write(presentation.summary)
+            st.markdown("**How I explain this in a presentation**")
+            st.write(presentation.presentation_line)
+        with st.expander("Technical details and submitted measurements"):
+            score_column, threshold_column = st.columns(2)
+            score_column.metric("Original model score (0–1)", f"{row['failure_score']:.6f}")
+            threshold_column.metric("Original decision threshold", f"{bundle.threshold:.6f}")
+            st.caption(
+                f"Full threshold: {bundle.threshold:.15f}. "
+                "The decision uses the full original values and the greater-than-or-equal rule."
+            )
+            st.dataframe(single_result[RAW_COLUMNS], hide_index=True, use_container_width=True)
+            st.caption(
+                "The 0–100 gauge is a score display. It is not a calibrated failure probability. "
+                "An observation below the line can still be a missed failure."
+            )
         if bool(row["outside_training_range"]):
             st.warning(
                 "Some inputs fall outside the observed training ranges: "
                 + str(row["outside_training_features"])
                 + ". Predictions in these ranges need additional validation."
             )
-        st.dataframe(single_result[RAW_COLUMNS], hide_index=True, use_container_width=True)
         st.download_button(
             "Download this prediction",
             data=single_result.to_csv(index=False).encode("utf-8"),

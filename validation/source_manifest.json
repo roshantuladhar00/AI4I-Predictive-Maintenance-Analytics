@@ -1,0 +1,452 @@
+{
+  "reference_repository": "roshantuladhar00/Capstone_Project_Damo-699",
+  "commit": "d07664ce49d274c2946cabc70fee1975bcac6ac7",
+  "verified_source_blobs": 74,
+  "unchanged_source_files": 33,
+  "files": [
+    {
+      "path": ".gitignore",
+      "reference_git_blob_sha1": "080d6c5baf77030f0e31ccf55880601b93dd6457",
+      "delivered_sha256": "59ce48c5404fe100590e83a282889d846c96741446d3d292b9eeb9ec2824139a",
+      "unchanged": false
+    },
+    {
+      "path": "LICENSE",
+      "reference_git_blob_sha1": "63a9fb0e30e9d73274c033ddc2712513753b916c",
+      "delivered_sha256": "f808d87d58a0c6f2b249b648519aa49c853e4b5b875f96ea349ae1ca5c295e0d",
+      "unchanged": true
+    },
+    {
+      "path": "README.md",
+      "reference_git_blob_sha1": "fb09e6fbe6ebf15ba56610309020d482a678b9cf",
+      "delivered_sha256": "ab3c15dcec84e1caebcb0c6ae463bc332539079c7e4005e07e381ee62edb3d43",
+      "unchanged": false
+    },
+    {
+      "path": "app/streamlit_app.py",
+      "reference_git_blob_sha1": "ddc2c18c86157852dae75d67756eef1b1be9dc77",
+      "delivered_sha256": "38bd89fa9422c1cb208d16ce2dcdfec4a57c505b7330730f133764c7a996b1b9",
+      "unchanged": true
+    },
+    {
+      "path": "data/cleaned/ai4i2020_cleaned.csv",
+      "reference_git_blob_sha1": "e2212c989c480b98f3f1b649de3a43fd86d8a466",
+      "delivered_sha256": "e9b3dc735de4c06dbb8bb9f1b05d4c24a9293d06ad8177cf1ecca30b1f25fd2b",
+      "unchanged": false
+    },
+    {
+      "path": "data/latest_snapshot.csv",
+      "reference_git_blob_sha1": "c17aa1f9e4f5b207dc37b23c1e91bbe62160edd9",
+      "delivered_sha256": "f3c9ec481e25edf90341fa8d85f3e32f4aa756698f1a7cc6cc0089e636294b54",
+      "unchanged": true
+    },
+    {
+      "path": "data/raw/ai4i2020.csv",
+      "reference_git_blob_sha1": "439cb923f55213e1faee547a55a9f4c96ea5de55",
+      "delivered_sha256": "9841aaa04b716d41ce9501f42d9388de7f571566608945061d026f95853c0337",
+      "unchanged": true
+    },
+    {
+      "path": "models/eval.json",
+      "reference_git_blob_sha1": "be751713af324a1ead973a2ec6cb162c64560105",
+      "delivered_sha256": "6000fb604e44783a723e49d1cce2e6c826745e15fdc524586c836fdfaabec611",
+      "unchanged": false
+    },
+    {
+      "path": "models/threshold.json",
+      "reference_git_blob_sha1": "318d60a0c5bdd760bf5935bf6ac6de1d4147cd4c",
+      "delivered_sha256": "d4da75a3282b34c29a17d5e7f5053ed292ee66af8ad8de6dd628ef1b9e4dfd87",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/.gitkeep",
+      "reference_git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "delivered_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "notebook/01_data_understanding.ipynb",
+      "reference_git_blob_sha1": "e8d75ddec7278f9c4b68183edcd57877500c70d4",
+      "delivered_sha256": "4b5a6686c909b38268963bef172c8929cd49cae25727b81c2edcc5e19f5af339",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/02_eda.ipynb",
+      "reference_git_blob_sha1": "a46b8a5856fdfc8039a07f19c0896a8eec09b939",
+      "delivered_sha256": "3fcf696fca767ddf11821a042550e5ea95a3932f5c0b16bd5621620eda0d3f53",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/03_data_cleaning.ipynb",
+      "reference_git_blob_sha1": "cfe789cd38573b7c87be376f43e2945b2c409844",
+      "delivered_sha256": "a8235c7f619a73d3bc67bfab91fe0639b39fa69e061b6c841d1f7f50fc9ffc06",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/03b_smote_experiment.ipynb",
+      "reference_git_blob_sha1": "6adda192617adbf94f12e4930b7061eb240d189f",
+      "delivered_sha256": "8f854ae1e704a6a1ed9beee8f28044c19b8dbfc15e5d0717d8665901e81da408",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/04_hypothesis_testing.ipynb",
+      "reference_git_blob_sha1": "326d1dcae71501c08041558e01e89aaebb1e89e9",
+      "delivered_sha256": "63e629e047d09a502a9222d14b82cfd11dfe2233eed716ca2f5b44f5c24ae427",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/05_failure_statistical_analysis.ipynb",
+      "reference_git_blob_sha1": "7a46926b2b02c091fe6d9f4624cf43e27fb679e2",
+      "delivered_sha256": "842b9c4f9e1b5170a34ded94357cd42106a83f26572b740a72d0e059a889f147",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/06_model_training_baseline.ipynb",
+      "reference_git_blob_sha1": "6a0dd3e7d698339f632cfedc27a226e081bcf9a8",
+      "delivered_sha256": "27d383f003ece5722322595b8292c96cbe0dad8c418e696a63e09c6c2a8b292e",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/07_ensemble_deep_learning_comparison.ipynb",
+      "reference_git_blob_sha1": "4d77eebe50a292b348c9a327b4244461849e025e",
+      "delivered_sha256": "367a2283bd3e8a13ccc94fa26cab5695490bc68f05f2121fea50c2fc455d4d38",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/08_model_explainability_SHAP.ipynb",
+      "reference_git_blob_sha1": "a6dc42c12344c73f671947715cafab4be596f79e",
+      "delivered_sha256": "8978f9892d599bc23a1735979bdc4e5f2f1496fc4b8b1cdfe2e35e7d12de5411",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/09_rul_ttf_regression.ipynb",
+      "reference_git_blob_sha1": "cbf4fcf66aadff9a6b453fc7192185c5612424c6",
+      "delivered_sha256": "d4cdf8b2053a3bb2ac71e1ab8a0718a9ce3653915ad1f715335c57eb3022392e",
+      "unchanged": false
+    },
+    {
+      "path": "notebook/10_survival_analysis1.ipynb",
+      "reference_git_blob_sha1": "43706f67a8ce86d68af3b419a05130481c5b1c5f",
+      "delivered_sha256": "89845a2140a6530ce7f8b5cfbf9fb6c7906e2146f130307fb4bccfd5b673961f",
+      "unchanged": false
+    },
+    {
+      "path": "reports/.gitkeep",
+      "reference_git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "delivered_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "reports/Capstone_Final_Report.pdf",
+      "reference_git_blob_sha1": "fa68386b591d15db6b2a185ba317684482899da4",
+      "delivered_sha256": "18e231c33530707a81fdec936e85886de7b60e8051a7e0b6728fa474f443970b",
+      "unchanged": true
+    },
+    {
+      "path": "reports/Project Proposal_Adjusted_Hypothesis.pdf",
+      "reference_git_blob_sha1": "91a316c2a5b27286b9648036b43d9d34d3303308",
+      "delivered_sha256": "b209a540bc69f1d4d0f86d1bfa9f2b6a6ef8a39f539a249a7999f21cfed89d24",
+      "unchanged": true
+    },
+    {
+      "path": "requirements.txt",
+      "reference_git_blob_sha1": "303103adbd89f7848b66071babfae188b33b1c7b",
+      "delivered_sha256": "c9de2a395e8a37b91af904f5ded9999241a0d7dc02bfa81e2bd54148139c9b0a",
+      "unchanged": false
+    },
+    {
+      "path": "src/__init__.py",
+      "reference_git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "delivered_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "src/dashboard_utils.py",
+      "reference_git_blob_sha1": "8213f806a988044080976586083bc9526e994493",
+      "delivered_sha256": "9e2dfbd752bd91bab7cd83c64f199cc6ba90f10ddc2447172e73bb1e3c427edd",
+      "unchanged": false
+    },
+    {
+      "path": "src/data_loader.py",
+      "reference_git_blob_sha1": "3c37878e1b88ca803ad8422f6e0486337783726d",
+      "delivered_sha256": "8720e51d9e8df484728659d28fe590dbb6d2a26bd24ee7d5b6501db82dd430bb",
+      "unchanged": true
+    },
+    {
+      "path": "src/features.py",
+      "reference_git_blob_sha1": "7b6dcd92f617c2b6636f0cac4615d8c25e53db27",
+      "delivered_sha256": "d45bfd9531366b339c201853f3c6b4071e88ac533989c694731ef69637c1d20a",
+      "unchanged": true
+    },
+    {
+      "path": "src/inference.py",
+      "reference_git_blob_sha1": "c049044350cd2ca9f1195e0f8fe85ce092c49449",
+      "delivered_sha256": "eb71ad57c6eef310063da7e578d1360adb33e61667e62156053cd0e1ef78787a",
+      "unchanged": true
+    },
+    {
+      "path": "src/labeling.py",
+      "reference_git_blob_sha1": "212501f8407aa337aaa13f5cfc4f448c4909edb1",
+      "delivered_sha256": "dbc9772e2ddcb2efcf6f8dabab0867045053d828ebe2ea5a9afe2fe35cd89273",
+      "unchanged": true
+    },
+    {
+      "path": "src/preprocessing.py",
+      "reference_git_blob_sha1": "a2e597534e4ac9bbbb18b8e56fb2ce1ce8ada435",
+      "delivered_sha256": "00c7759aa16d5003572c01309e8b6b1491e01579a06e80bdc63e2ba864011a14",
+      "unchanged": true
+    },
+    {
+      "path": "src/shap_explain.py",
+      "reference_git_blob_sha1": "624dc0a62475e096be49c9210903c6d698d6f816",
+      "delivered_sha256": "1162bb7205f5e35f6428415e8f5093822aaf4f88077476f2ba6ab3c31d1ea770",
+      "unchanged": true
+    },
+    {
+      "path": "src/simulator.py",
+      "reference_git_blob_sha1": "6ca14bc57d1fb3c7e1764ef8f3526cb563ea4eec",
+      "delivered_sha256": "ee743469be9b02d42dc5947afbb7685316f06d11e542a795b1dcfb3e86951645",
+      "unchanged": true
+    },
+    {
+      "path": "src/survival_analysis.py",
+      "reference_git_blob_sha1": "dd2d82ca5076c2d8dde528b85328475921c8e1f8",
+      "delivered_sha256": "2f6abf8ac375e74be13d8f64041e9ce06df0c3724970b6c119c69cde1f5e8223",
+      "unchanged": true
+    },
+    {
+      "path": "src/train.py",
+      "reference_git_blob_sha1": "a414b918dd52d111f18f500412d948fd9ea98a1f",
+      "delivered_sha256": "4f77ecfc6d416c3e5961d78ca35d644cbc50c8ea90db517c34fbf88f042e57d1",
+      "unchanged": true
+    },
+    {
+      "path": "src/ttf_trend.py",
+      "reference_git_blob_sha1": "36ed2729055abc5a6df3e37482d927dffa8507a4",
+      "delivered_sha256": "e119a0231ca0d7e7a1925060df531cd17da1f132b72edd4ca3850ab3a43ba8e9",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/.gitkeep",
+      "reference_git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "delivered_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/24_survival_model_comparison.png",
+      "reference_git_blob_sha1": "cd7d3e9f0e066284f7357743f7a8174512c05ad7",
+      "delivered_sha256": "416f40f1a95c5c72bd0d2c3c2c88607a3917592b9e2cfb4f595bc1d842b3d24b",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/Air_temperature_[K]_boxplot.png",
+      "reference_git_blob_sha1": "a3d2be247dad1423e71c4cbee26cf843a093f215",
+      "delivered_sha256": "8c7985cb6a581744549b77ee21c33a914c5c7e1ac18fa91783edf54c00d89c44",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/Air_temperature_[K]_distribution.png",
+      "reference_git_blob_sha1": "9ba228d00fdf1e9148b5ff0d3687031e141fe6cb",
+      "delivered_sha256": "bc07e35555bf26110f37fb2cd8c18bbded13a09763b3d67ecfa7cfa3385bef17",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/Process_temperature_[K]_boxplot.png",
+      "reference_git_blob_sha1": "cda06abf0ea5df9c77032e7ccbfefc3039e79708",
+      "delivered_sha256": "66d6a57b44317d8f81a2bcb444b9c687499d3f78eb6f7efcfc81dbfd909de8b9",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/Process_temperature_[K]_distribution.png",
+      "reference_git_blob_sha1": "d5e4596f88fc0bdc619ed6ead3b7e74c06a16a75",
+      "delivered_sha256": "3094202220891c8f7ab1ac85377f6c6be8b97b6b0e0294756048c9bb6dab84a5",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/Rotational_speed_[rpm]_boxplot.png",
+      "reference_git_blob_sha1": "9bc0657e7b61a8738c7a33a541ecdb83706f0464",
+      "delivered_sha256": "18126310e0b6d88e75f5ccc30188e6740d9ec86e5b3b0a10c8069dbc0fe84a4b",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/Rotational_speed_[rpm]_distribution.png",
+      "reference_git_blob_sha1": "5aa8a563b1299bed09be9954e893fed36a184e10",
+      "delivered_sha256": "9f867fd9ef5ce0f4970e1ede253f77fb6b411d1b4c7553afe829790b1d482acf",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/Tool_wear_[min]_boxplot.png",
+      "reference_git_blob_sha1": "c93efd34875748fd682b521e9db0bfa4b09e3784",
+      "delivered_sha256": "1e358bf6fd8e57659b7e2361c148eb352ead0debf0c34250867901ddfe60fcad",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/Tool_wear_[min]_distribution.png",
+      "reference_git_blob_sha1": "4ac53bbbbbdb971370ca9cef6803db5e31146cf0",
+      "delivered_sha256": "6027554db092ee929b361e407dd613f9b707c5e680951e0e67564649de143f00",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/Torque_[Nm]_boxplot.png",
+      "reference_git_blob_sha1": "4cc92905109823bb317ab87dabe2994d599e0d3e",
+      "delivered_sha256": "99ae482f05842e58b43b6cdf2e9da39bff4ee81231d313ee721eb4432b957255",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/Torque_[Nm]_distribution.png",
+      "reference_git_blob_sha1": "0175f36ba70556a16ec1b9c35c53961de0f1d291",
+      "delivered_sha256": "6e86885fd9bb0c6c4835db07a349e322e88647119b3f7af1e4daf617b2bcfa36",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/air_temperature_k_boxplot.png",
+      "reference_git_blob_sha1": "02a947d2341618ee703c8a8de88ec1e3a6b8ca8d",
+      "delivered_sha256": "b6c864aa328d94b3cc797330fc52f4a80bc7c9a10c951fa39c344066d7723744",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/air_temperature_k_vs_machine_failure.png",
+      "reference_git_blob_sha1": "fcb993c5de96ef8858e5b3ec52b06bd33346cff1",
+      "delivered_sha256": "8d35576146549abc96fb2504bf4edffaeac18e5b5630d47b2a8911da3e8444aa",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/correlation_heatmap.png",
+      "reference_git_blob_sha1": "ccd4e5fc14917fd32f8b6938f70902a8bf7a6cd9",
+      "delivered_sha256": "4e59b8e5acd4a0ff435270596d328e02a009d8fd1d6eaf41e513558932e2675f",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/failure_type_distribution.png",
+      "reference_git_blob_sha1": "50ce9a1084c158d2e4adb27686a1cd1c56db503d",
+      "delivered_sha256": "8e76d48ef8f744a9df86e54ce76189f031658cd38b507887c23893706f4cb695",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/machine_failure_distribution.png",
+      "reference_git_blob_sha1": "486df6d336fa842b29da624a6a2f50127a9d9f21",
+      "delivered_sha256": "d69b688ef266062b8626a7469df4766e94019002417265dfc30d738a022c7d3f",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/machine_type_vs_machine_failure.png",
+      "reference_git_blob_sha1": "570acc80a1c1fe211206051cdebe04beed6c1694",
+      "delivered_sha256": "641d39989b81a3bdbc6d764765f33ca2ea562e4b087985d46c1dde5af5eb1647",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/missing_values_heatmap.png",
+      "reference_git_blob_sha1": "6910a2ae85670291547ee066dd7e879f7c811dad",
+      "delivered_sha256": "e5950c05c973ad6f14db9082786b8c24239eaf8249fd5ca459d7aa52a73d32a1",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/process_temperature_k_boxplot.png",
+      "reference_git_blob_sha1": "e3af676d99b9e0d212c86796f967779dcc6eea37",
+      "delivered_sha256": "6f03e9ba5042f797a6d26efc7a2009ec040e89c90ffc5b6733e1e915ef3b0a3e",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/process_temperature_k_vs_machine_failure.png",
+      "reference_git_blob_sha1": "156713640d54da12d41b2eb39008b49953dd634b",
+      "delivered_sha256": "69dcd6c0b685c44f0114a869ce7512b858d17f015ba21402c660fab59295d0c7",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/rotational_speed_rpm_boxplot.png",
+      "reference_git_blob_sha1": "ad436988845b3e3f6d2267e1f7206082255f342b",
+      "delivered_sha256": "375fea062af649a09163a7ab319112b76aacaa5dbfc2f7ba7ab88861a5a18c80",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/rotational_speed_rpm_vs_machine_failure.png",
+      "reference_git_blob_sha1": "d802a7e190fd963f6cc21d92ca86e16b618053b3",
+      "delivered_sha256": "2d07fa0617fd3029249005e5e83779f3ecc28e8e5de3a3e7251e14c2bff0e6c7",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/sensor_feature_distributions.png",
+      "reference_git_blob_sha1": "47d8b52c717b3148fe9687ffb13d3cc1a29c3bc4",
+      "delivered_sha256": "b082a4f26738c98094348168b61edcaa6f05ad951017df3faafccaac00aa75a0",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/shap_bar.png",
+      "reference_git_blob_sha1": "45b3cc1148aed76a4d9cb5b40824ac853979e867",
+      "delivered_sha256": "cab1827b311479df726a2e3ed86b89290ea02a2d34f6281e90e39884a5ed2085",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/shap_by_tier.png",
+      "reference_git_blob_sha1": "95c53d5aa370529d5430a8440f43aa8f8db7955a",
+      "delivered_sha256": "ad564bb3fe6cb202766ec7aa3b3332c8295bb5596c2edf90b7aa825cb98c1624",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/shap_dependence.png",
+      "reference_git_blob_sha1": "473e47f16cbbcaa81ccea224a7c32e797ea82018",
+      "delivered_sha256": "e4c768d60ea991767d7c8e3f27a75ee33bdf203d43ddb96cde3421aa25f96bb3",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/shap_importance_bar.png",
+      "reference_git_blob_sha1": "26945d99572f29c90d58e738f32258e271dbb5e5",
+      "delivered_sha256": "e7407334d3b9d5e57904b65284f0391649896391966ec802d219db12862222b2",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/shap_local_fn.png",
+      "reference_git_blob_sha1": "1630bbd7fdbc0e9682e86540f783fdd84af2d52a",
+      "delivered_sha256": "8eda2f092a7da12ecc16c355ed58734d34d611f46231400d032dadbf3004f50b",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/shap_local_tn.png",
+      "reference_git_blob_sha1": "ba3075fa4afada6174b1f859189a7d4a0b6aeddc",
+      "delivered_sha256": "6c7502e15e0bd9d6be19ca90b32c9e2306a7e2e0dc5f46f36dd7d91248f1ab83",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/shap_local_tp.png",
+      "reference_git_blob_sha1": "df264143330b628857a78fcf7317670abbbd9069",
+      "delivered_sha256": "ccaf498f41bb76305b517c3b7cddf1ce1727596f7f6a2e44b423706d99a6a7f1",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/shap_summary.png",
+      "reference_git_blob_sha1": "6b93e6a63be73a445c0ceb4749a3a3c2f087d79c",
+      "delivered_sha256": "d133ae2b3bfd21489cb957b0d134443797ea9faf4de727a431d0d9e9fe461500",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/tool_wear_min_boxplot.png",
+      "reference_git_blob_sha1": "fbd6fb21e75dc4e04da3f5baae2a76d958494e94",
+      "delivered_sha256": "9c25a3d3092151a1ce3942cf3ff9fdb843e99095580e1f8ad821f3b7dee4f15d",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/tool_wear_min_vs_machine_failure.png",
+      "reference_git_blob_sha1": "7692278cfdcc178318126d41c3c6cdd9dee57634",
+      "delivered_sha256": "7f8c3170ba3c3f781386f65f710ab46156ef93c36a7501a78b7e237007ed0a3d",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/top_feature_importances_clean.png",
+      "reference_git_blob_sha1": "192965ccd756ef8ca4e5f8f65dacf94cacc6c550",
+      "delivered_sha256": "b4813142e43eac9af916eac795f60ee47f69d83c354111c1baa638c64fc69131",
+      "unchanged": true
+    },
+    {
+      "path": "visuals/torque_nm_boxplot.png",
+      "reference_git_blob_sha1": "1648af1f00ce4442a87c68cb959b66632f24bc20",
+      "delivered_sha256": "3aba440a4c2d2cf0058b8497ff06265e3e92dc29c32dbd6d4faa4652834e8435",
+      "unchanged": false
+    },
+    {
+      "path": "visuals/torque_nm_vs_machine_failure.png",
+      "reference_git_blob_sha1": "79ae446d871661af0cf4a4654a76135f80c71f2f",
+      "delivered_sha256": "90073301218d454468c3839b3337542985809fb7983d207007629a8bfcea6ce3",
+      "unchanged": false
+    }
+  ]
+}

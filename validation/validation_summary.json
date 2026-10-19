@@ -1,0 +1,131 @@
+{
+  "python": "3.13.5",
+  "scikit_learn": "1.6.1",
+  "notebooks": [
+    {
+      "notebook": "01_data_understanding.ipynb",
+      "code_cells": 5,
+      "errors": 0,
+      "embedded_figures": 1
+    },
+    {
+      "notebook": "02_eda.ipynb",
+      "code_cells": 15,
+      "errors": 0,
+      "embedded_figures": 16
+    },
+    {
+      "notebook": "03_data_cleaning.ipynb",
+      "code_cells": 8,
+      "errors": 0,
+      "embedded_figures": 0
+    },
+    {
+      "notebook": "03b_smote_experiment.ipynb",
+      "code_cells": 8,
+      "errors": 0,
+      "embedded_figures": 1
+    },
+    {
+      "notebook": "04_hypothesis_testing.ipynb",
+      "code_cells": 15,
+      "errors": 0,
+      "embedded_figures": 4
+    },
+    {
+      "notebook": "05_failure_statistical_analysis.ipynb",
+      "code_cells": 5,
+      "errors": 0,
+      "embedded_figures": 10
+    },
+    {
+      "notebook": "06_model_training_baseline.ipynb",
+      "code_cells": 18,
+      "errors": 0,
+      "embedded_figures": 1
+    },
+    {
+      "notebook": "07_ensemble_deep_learning_comparison.ipynb",
+      "code_cells": 18,
+      "errors": 0,
+      "embedded_figures": 2
+    },
+    {
+      "notebook": "08_model_explainability_SHAP.ipynb",
+      "code_cells": 14,
+      "errors": 0,
+      "embedded_figures": 7
+    },
+    {
+      "notebook": "09_rul_ttf_regression.ipynb",
+      "code_cells": 19,
+      "errors": 0,
+      "embedded_figures": 5
+    },
+    {
+      "notebook": "10_survival_analysis1.ipynb",
+      "code_cells": 25,
+      "errors": 0,
+      "embedded_figures": 14
+    }
+  ],
+  "notebook_count": 11,
+  "executed_code_cells": 150,
+  "dashboard": {
+    "pages": 3,
+    "simulation_start_pause_resume_reset": true,
+    "what_if_applies_edits": true,
+    "survival_cohorts": [
+      "All machines",
+      "Type only",
+      "Wear bin only",
+      "Type + Wear bin"
+    ],
+    "snapshot_rows": 10000,
+    "maintenance_trigger_and_reset": true,
+    "live_shap_drivers": [
+      {
+        "feature": "cat__Type_M",
+        "shap_value": -0.003418131653737649
+      },
+      {
+        "feature": "num__Tool wear [min]",
+        "shap_value": 0.003230037622740986
+      },
+      {
+        "feature": "num__Process temperature [K]",
+        "shap_value": -0.001607904465651314
+      },
+      {
+        "feature": "num__Rotational speed [rpm]",
+        "shap_value": 0.0004447216722883489
+      },
+      {
+        "feature": "num__Air temperature [K]",
+        "shap_value": 0.00025061255253612134
+      }
+    ],
+    "inference": {
+      "risk_probability": 0.0009395601159545271,
+      "risk_label": "Low Risk",
+      "is_high_risk": false,
+      "threshold_used": 0.025743180189271207
+    },
+    "rul": {
+      "ttf_min": 499.1,
+      "method": "regression_rul",
+      "notes": "TTF estimated using trained regression RUL model."
+    },
+    "gauge_matches_inference": true
+  },
+  "models": {
+    "models/best_model.pkl": "e45584db47f7dd2e5d905518aac6e8708d88865c981df684e0302e3b363b82b0",
+    "models/rul_regressor.joblib": "e7312d1ab6229fa8e523ecf2640ab6a186c518764073aa9488537a5525e1814f",
+    "models/eval.json": "6000fb604e44783a723e49d1cce2e6c826745e15fdc524586c836fdfaabec611",
+    "models/threshold.json": "d4da75a3282b34c29a17d5e7f5053ed292ee66af8ad8de6dd628ef1b9e4dfd87"
+  },
+  "validation_method": "Notebook code executed in-process with IPython; native Streamlit AppTest for dashboard interactions. No browser visual inspection.",
+  "notebook_07": "All 12 classifiers ran, including TabNet and LSTM; deployment ensemble 5-fold CV completed.",
+  "notebook_10": "Kaplan\u2013Meier, Cox PH, DeepSurv, and CoxCC completed.",
+  "protected_existing_desktop_artifacts_unchanged": 6
+}

@@ -12,10 +12,10 @@ def submit_observation(app):
 def test_single_observation_form(project_root):
     app = AppTest.from_file(str(project_root / "app.py"), default_timeout=30).run()
     assert not app.exception
-    assert app.title[0].value == "Maintenance prediction workspace"
+    assert app.title[0].value == "Maintenance prediction dashboard"
     app = submit_observation(app)
     assert not app.exception
-    assert app.success[0].value == "No alert at the selected threshold."
+    assert app.success[0].value == "No failure alert"
     app.number_input(key="air_temperature").set_value(302.7)
     app.number_input(key="process_temperature").set_value(310.5)
     app.number_input(key="rotational_speed").set_value(1263.0)
