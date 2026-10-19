@@ -1,0 +1,70 @@
+{
+  "protocol_version": 1,
+  "candidate": "weighted_voting",
+  "score_representation": "uncalibrated",
+  "feature_set": "engineered",
+  "raw_input_columns": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Type"
+  ],
+  "model_input_columns": [
+    "Air temperature [K]",
+    "Process temperature [K]",
+    "Rotational speed [rpm]",
+    "Torque [Nm]",
+    "Tool wear [min]",
+    "Type",
+    "Temp_diff",
+    "Torque_RPM_ratio"
+  ],
+  "decision": "predict failure when selected model score >= threshold",
+  "threshold": 0.06212594932220602,
+  "threshold_selection_split": "validation",
+  "objective": "maximize validation true positives subject to the validation false-positive-rate cap",
+  "validation_FPR_cap": 0.05,
+  "cap_basis": "agreed project operating preference; business costs are not quantified",
+  "tie_breaking": [
+    "fewest false positives",
+    "highest threshold"
+  ],
+  "validation_normal_rows": 1546,
+  "maximum_validation_false_positives": 77,
+  "model_refitted": false,
+  "model_training_rows": 6400,
+  "validation_rows": 1600,
+  "reserved_final_test_rows": 2000,
+  "metrics": [
+    "recall",
+    "false_positive_rate",
+    "precision",
+    "false_discovery_rate",
+    "f1",
+    "accuracy",
+    "balanced_accuracy",
+    "average_precision",
+    "roc_auc",
+    "Brier_score",
+    "log_loss",
+    "alert_rate"
+  ],
+  "interval_methods": {
+    "proportions": "Wilson intervals for the fixed test policy",
+    "AP_ROC_F1_Brier_logloss": "percentile stratified row bootstrap; fixed class counts and predictor",
+    "confidence_level": 0.95,
+    "bootstrap_repeats": 2000
+  },
+  "seed": 42,
+  "early_EDA_included_final_test_rows": true,
+  "input_checksums": {
+    "data": "e9b3dc735de4c06dbb8bb9f1b05d4c24a9293d06ad8177cf1ecca30b1f25fd2b",
+    "split": "9b5bfab7837a8d18473be816bad87a28d5eff4166ec93adc1c60b8f992f20b4b",
+    "model": "3b0ee78c9863d9b277c1d9e5afd40aa6cf4f0922904d67ceed813ae64c345985",
+    "metadata": "fd9410937789c67a9d01bb02615a8922c1b00cf16f72f00d93e12b99e82ce750",
+    "schema": "d86793e105f3a059b58f4dc782a12d2e15a94864003a957b366b671ae0e586a2",
+    "saved_validation": "568970a0d8b205de10c941d4ddde1d9aadfadf33388c769392f73fcc45c4e0d2"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "candidate": "weighted_voting",
+  "score_representation": "uncalibrated",
+  "positive_class": 1,
+  "threshold": 0.06212594932220602,
+  "comparison": ">=",
+  "objective": "maximize validation true positives subject to the validation false-positive-rate cap",
+  "validation_FPR_cap": 0.05,
+  "threshold_selection_split": "validation",
+  "protocol_sha256": "7b32ea0cfdf586381a38eb952eeb68c90b1511e2380de41b0b40cdc8009ffaa5",
+  "source_model_sha256": "3b0ee78c9863d9b277c1d9e5afd40aa6cf4f0922904d67ceed813ae64c345985",
+  "feature_preparation_required_before_pipeline": true,
+  "production_validated": false
+}

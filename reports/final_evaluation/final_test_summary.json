@@ -1,0 +1,141 @@
+{
+  "protocol_sha256": "7b32ea0cfdf586381a38eb952eeb68c90b1511e2380de41b0b40cdc8009ffaa5",
+  "source_model_sha256": "3b0ee78c9863d9b277c1d9e5afd40aa6cf4f0922904d67ceed813ae64c345985",
+  "final_test_scored": true,
+  "threshold": 0.06212594932220602,
+  "observed_test_FPR_at_or_below_cap": true,
+  "metrics": {
+    "threshold": 0.06212594932220602,
+    "rows": 2000,
+    "failures": 68,
+    "normal_rows": 1932,
+    "true_positives": 61,
+    "false_positives": 88,
+    "false_negatives": 7,
+    "true_negatives": 1844,
+    "precision": 0.40939597315436244,
+    "recall": 0.8970588235294118,
+    "false_positive_rate": 0.045548654244306416,
+    "specificity": 0.9544513457556936,
+    "false_discovery_rate": 0.5906040268456376,
+    "f1": 0.5622119815668203,
+    "accuracy": 0.9525,
+    "balanced_accuracy": 0.9257550846425526,
+    "alerts": 149,
+    "alert_rate": 0.0745,
+    "average_precision": 0.8702544334125267,
+    "roc_auc": 0.9729630982827915,
+    "Brier_score": 0.009446072730039109,
+    "log_loss": 0.04203113837368736
+  },
+  "metric_intervals": [
+    {
+      "metric": "recall",
+      "estimate": 0.8970588235294118,
+      "CI_low": 0.8024208869063437,
+      "CI_high": 0.9492342282100709,
+      "method": "Wilson",
+      "successes": 61.0,
+      "denominator": 68
+    },
+    {
+      "metric": "false_positive_rate",
+      "estimate": 0.045548654244306416,
+      "CI_low": 0.037118663816708836,
+      "CI_high": 0.055782259449111055,
+      "method": "Wilson",
+      "successes": 88.0,
+      "denominator": 1932
+    },
+    {
+      "metric": "precision",
+      "estimate": 0.40939597315436244,
+      "CI_low": 0.333684296216248,
+      "CI_high": 0.4896620640689215,
+      "method": "Wilson",
+      "successes": 61.0,
+      "denominator": 149
+    },
+    {
+      "metric": "false_discovery_rate",
+      "estimate": 0.5906040268456376,
+      "CI_low": 0.5103379359310785,
+      "CI_high": 0.6663157037837519,
+      "method": "Wilson",
+      "successes": 88.0,
+      "denominator": 149
+    },
+    {
+      "metric": "specificity",
+      "estimate": 0.9544513457556936,
+      "CI_low": 0.944217740550889,
+      "CI_high": 0.9628813361832912,
+      "method": "Wilson",
+      "successes": 1844.0,
+      "denominator": 1932
+    },
+    {
+      "metric": "accuracy",
+      "estimate": 0.9525,
+      "CI_low": 0.9422790928066446,
+      "CI_high": 0.9609859794038217,
+      "method": "Wilson",
+      "successes": 1905.0,
+      "denominator": 2000
+    },
+    {
+      "metric": "alert_rate",
+      "estimate": 0.0745,
+      "CI_low": 0.06378984993294573,
+      "CI_high": 0.08684155730340054,
+      "method": "Wilson",
+      "successes": 149.0,
+      "denominator": 2000
+    },
+    {
+      "metric": "average_precision",
+      "estimate": 0.8702544334125267,
+      "CI_low": 0.7988320638035404,
+      "CI_high": 0.9328430738050393,
+      "method": "stratified percentile bootstrap",
+      "successes": null,
+      "denominator": 2000
+    },
+    {
+      "metric": "roc_auc",
+      "estimate": 0.9729630982827915,
+      "CI_low": 0.9433520962732921,
+      "CI_high": 0.9934778802825478,
+      "method": "stratified percentile bootstrap",
+      "successes": null,
+      "denominator": 2000
+    },
+    {
+      "metric": "f1",
+      "estimate": 0.5622119815668203,
+      "CI_low": 0.5023234956721243,
+      "CI_high": 0.6206896551724138,
+      "method": "stratified percentile bootstrap",
+      "successes": null,
+      "denominator": 2000
+    },
+    {
+      "metric": "Brier_score",
+      "estimate": 0.009446072730039109,
+      "CI_low": 0.006684447906829387,
+      "CI_high": 0.01234988800738798,
+      "method": "stratified percentile bootstrap",
+      "successes": null,
+      "denominator": 2000
+    },
+    {
+      "metric": "log_loss",
+      "estimate": 0.04203113837368736,
+      "CI_low": 0.030416132912620127,
+      "CI_high": 0.05514236254537208,
+      "method": "stratified percentile bootstrap",
+      "successes": null,
+      "denominator": 2000
+    }
+  ]
+}
