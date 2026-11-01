@@ -1,4 +1,4 @@
-# Capstone_Project_Damo-699  
+# Capstone_Project
 Predictive Maintenance System using AI4I 2020 Sensor Data
 
 ## Project Overview
